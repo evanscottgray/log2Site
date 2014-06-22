@@ -2,22 +2,83 @@ doctype html
 head
     link(href="/css/bootstrap.css", rel="stylesheet")
     link(href="/css/page.css", rel="stylesheet")
-    script(type="text/javascript", src="/js/raphael-min.js")
-    script(type="text/javascript", src="/js/network.js")
+    script(src="/js/jquery.js")
+    script(src="/js/bootstrap.js")
 body
     .container-narrow
         .masthead
             ul.nav.nav-pills.pull-right
                 li.active
-                    a(href="#") Home
+                    a(href="/") Home
                 li
-                    a(href="#") About
+                    a(href="/about") About
                 li
-                    a(href="#") Contact
-            h3.muted Thug Lyfe
+                    a(href="/solutions") Solutions
+                li
+                    a(href="/contact") Contact
+            img(src="/images/log2logo.png",style="max-height: 9%;")
         hr
         .jumbotron
-            h1 Sup dawgs
-            marquee
-                p.lead This shit be poppin'
-            a.btn.btn-large.btn-success(href="#") Sign up for our stuff today!
+            h2 Cloud Based BGP Monitoring and Analysis
+            p.lead Get a deeper look into your routing tables than ever before. It's time to tap into a more powerful source of data.
+            a.btn.btn-large.btn-success#cool(href="#") Sign up to learn more.
+        hr
+        .row
+            .col-md-4
+                .panel.panel-danger
+                    .panel-heading
+                        h3.text-center Starter
+                    .panel-body.text-center
+                        p.lead(style='font-size: 40px;')
+                            strong $200 / month
+                    ul.list-group.list-group-flush.text-center
+                        li.list-group-item
+                            i.glyphicon.glyphicon-ok.text-danger
+                            |  1 Month Free Trial
+                        li.list-group-item
+                            i.glyphicon.glyphicon-ok.text-danger
+                            |  Great for Projects
+                        li.list-group-item
+                            i.glyphicon.glyphicon-ok.text-danger
+                            |  Sweet Dashboard
+                    .panel-footer
+                        a.btn.btn-lg.btn-block.btn-danger(href='#') Subscribe
+            .col-md-4
+                .panel.panel-info
+                   .panel-heading
+                       h3.text-center Enterprise
+                   .panel-body.text-center
+                       p.lead(style='font-size: 40px;')
+                           strong $600 / month
+                   ul.list-group.list-group-flush.text-center
+                       li.list-group-item
+                           i.glyphicon.glyphicon-ok.text-info
+                           |  24/7 Customer Support
+                       li.list-group-item
+                           i.glyphicon.glyphicon-ok.text-info
+                           |  Great for Startups!
+                       li.list-group-item
+                           i.glyphicon.glyphicon-ok.text-info
+                           |  In Depth Analytics
+                   .panel-footer
+                       a.btn.btn-lg.btn-block.btn-info(href='#') Subscribe
+            .col-md-4
+                .panel.panel-success
+                    .panel-heading
+                        h3.text-center.nowrap Service Provider
+                    .panel-body.text-center
+                        p.lead(style='font-size: 40px;')
+                            strong $2200 / month
+                    ul.list-group.list-group-flush.text-center
+                        li.list-group-item
+                            i.glyphicon.glyphicon-ok.text-success
+                            |  24/7 Priority Support
+                        li.list-group-item
+                            i.glyphicon.glyphicon-ok.text-success
+                            |  Granular Control
+                        li.list-group-item
+                            i.glyphicon.glyphicon-ok.text-success
+                            |  In Depth Analytics
+                    .panel-footer
+                        a.btn.btn-lg.btn-block.btn-success(href='#') Subscribe
+script(src="/js/page.js")
